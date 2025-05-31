@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script type="module" crossorigin src="./assets/main.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main.css">
+</head>
+
+<body class="font-sans text-black leading-normal">
+  <div class="min-h-full flex flex-col overflow-hidden">
+    <header class="header fixed top-0 left-0 w-full z-[100] shadow-[0_0_30px_0_rgba(0,0,0,0.14)] bg-white">
+      <div class="container">
+        <div class="flex items-center gap-[30px] py-[20px] lg:py-[16px]">
+          <a href="./" class="flex-[0_1_auto] xl:flex-[0_0_183px]">
+            <img class="h-[35px] w-auto hidden md:block" src="img/icons/logo.svg" alt="">
+            <img class="h-[35px] w-auto block md:hidden" src="img/icons/logo-icon.svg" alt="">
+          </a>
+          <div data-state="closed"
+            class="menu-container group flex-1 flex items-center justify-start flex-row-reverse gap-[10px] md:gap-[20px] lg:justify-center lg:gap-x-7 lg:flex-row lg:gap-[30px]">
+            <div
+              class="menu-icon flex justify-center items-center border border-orange rounded-[30px] w-[40px] h-[40px] z-[55] lg:hidden">
+              <div class="icon-menu relative w-[20px] h-[14px] cursor-pointer z-10">
+                <span id="top-line"
+                  class="absolute right-0 w-full h-[2px] bg-orange transition-transform duration-300 origin-center group-[.menu-container[data-state='open']]:translate-y-1.5 group-[.menu-container[data-state='open']]:rotate-45"></span>
+                <span id="middle-line"
+                  class="absolute top-1/2 -translate-y-1/2 right-0 w-full h-[2px] bg-orange transition-all duration-300 group-[.menu-container[data-state='open']]:w-0"></span>
+                <span id="bottom-line"
+                  class="absolute right-0 w-full h-[2px] bottom-0 bg-orange transition-transform duration-300 origin-center group-[.menu-container[data-state='open']]:-translate-y-1.5 group-[.menu-container[data-state='open']]:-rotate-45"></span>
+              </div>
+            </div>
+
+            <nav
+              class="menu-body lg:flex-1
+                max-lg:fixed max-lg:top-0 max-lg:right-0 max-lg:h-full max-lg:w-[394px]
+                max-lg:pointer-events-none max-lg:opacity-0 max-lg:z-50 max-lg:transition-opacity max-lg:duration-300 max-lg:bg-white max-lg:overflow-auto
+                max-lg:[&::-webkit-scrollbar]:hidden max-lg:[-ms-overflow-style:none] max-lg:[scrollbar-width:none]
+                max-lg:flex max-lg:flex-col max-lg:gap-[56px] max-lg:p-5
+                max-sm:w-full [data-state=open]:pointer-events-auto group-[.menu-container[data-state='open']]:opacity-100">
+              <div class="hidden max-lg:flex max-lg:justify-between max-lg:items-center max-lg:gap-[10px] max-lg:mr-[60px]
+              max-md:mr-[50px]">
+                <a href="./">
+                  <img class="h-[35px] w-auto" src="../img/icons/logo-icon.svg" alt="">
+                </a>
+                <a href="./" class="btn-orange">Get
+                  a demo</a>
+              </div>
+
+              <ul
+                class="flex flex-wrap justify-center gap-[10px_28px] max-lg:flex-1 max-lg:flex-col max-lg:justify-start max-lg:gap-[52px_0px]">
+                <li>
+                  <a data-goto="section-key-stats"
+                    class="font-semibold text-base leading-[1.2] text-center hover:text-orange transition-colors duration-300 max-lg:pl-[4px] cursor-pointer">Key
+                    Stats</a>
+                </li>
+                <li>
+                  <a data-goto="section-benefits"
+                    class="font-semibold text-base leading-[1.2] text-center hover:text-orange transition-colors duration-300 max-lg:pl-[4px] cursor-pointer">Benefits</a>
+                </li>
+                <li>
+                  <a data-goto="section-pricing"
+                    class="font-semibold text-base leading-[1.2] text-center hover:text-orange transition-colors duration-300 max-lg:pl-[4px] cursor-pointer">Pricing</a>
+                </li>
+                <li>
+                  <a data-goto="section-functions"
+                    class="font-semibold text-base leading-[1.2] text-center hover:text-orange transition-colors duration-300 max-lg:pl-[4px] cursor-pointer">Main
+                    Functions</a>
+                </li>
+                <li>
+                  <a data-goto="section-faq"
+                    class="font-semibold text-base leading-[1.2] text-center hover:text-orange transition-colors duration-300 max-lg:pl-[4px] cursor-pointer">FAQ</a>
+                </li>
+                <li>
+                  <a data-goto="section-try-it"
+                    class="font-semibold text-base leading-[1.2] text-center hover:text-orange transition-colors duration-300 max-lg:pl-[4px] cursor-pointer">Try
+                    it</a>
+                </li>
+              </ul>
+
+              <div class="hidden max-lg:block font-medium text-[16px] leading-[120%] text-dark text-center">
+                NeverMissedCall</div>
+            </nav>
+
+            <div class="shadow
+              fixed top-0 left-0 w-full h-full z-[10]
+              bg-black/80
+              opacity-0 pointer-events-none
+              transition-opacity duration-300
+             group-[.menu-container[data-state='open']]:pointer-events-auto group-[.menu-container[data-state='open']]:opacity-100
+              max-sm:hidden"></div>
+
+            <div class="flex-[0_1_auto] flex justify-end xl:flex-[0_0_183px]">
+              <a href="./" class="btn-orange">
+                Get a demo</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    <main class="page flex-1">
+      <div class="relative bg-white/40 overflow-hidden">
+        <div class="absolute inset-0 w-full h-full z-10 backdrop-blur-[50px]"></div>
+        <div class="container relative z-10">
+          <div class="max-w-[860px] mx-auto py-[50px] max-md:py-10 text-center flex flex-col items-center">
+            <div class="mb-6 max-md:mb-5">
+              <img src="img/icons/logo-icon.svg" alt="AI Assistant" class="h-[52px] w-auto mx-auto">
+            </div>
+            <h1>Never Miss a Call Again.</h1>
+            <h3 class="mb-10 max-md:mb-5">
+              Let our AI agent call you now so you can evaluate how good they are in June 2025
+            </h3>
+            <form action="#" class="relative w-[419px] rounded-[16px] p-[21px] bg-white/50 max-w-full">
+              <div class="absolute w-full h-full bg-gradient-border"></div>
+              <div class="relative z-10 flex flex-col gap-[20px]">
+                <div>
+                  <div class="form-input flex items-center border border-grey-2 rounded-xl px-4 py-3 bg-white w-full">
+                    <input autocomplete="off" type="text" name="form[]" placeholder="Your email"
+                      class="font-semibold text-base leading-[1.2] w-full bg-transparent block max-md:text-[14px]">
+                  </div>
+                </div>
+                <div>
+                  <div class="form-select group relative w-full cursor-pointer" data-state="closed">
+                    <div class="form-input flex items-center border border-grey-2 rounded-xl px-4 py-3 bg-white w-full">
+                      <div class="country-select-trigger flex items-center mr-2.5">
+                        <img src="img/flag-bl.webp" alt="Germany" class="flag w-[28px] h-[20px] rounded-sm">
+                        <img src="img/icons/arrow2.svg" alt=""
+                          class="arrow ml-1 w-2 h-2 transition-transform group-[.form-select[data-state='open']]:rotate-180">
+                      </div>
+                      <input type="tel" name="phone" placeholder="Your phone"
+                        class="phone-input font-semibold text-base leading-[1.2] w-full bg-transparent block max-md:text-[14px]"
+                        id="phoneInput">
+                    </div>
+
+                    <div
+                      class="form-body hidden group-[.form-select[data-state='open']]:block country-dropdown absolute top-full left-0 w-full rounded-b-[16px] rounded-t-none shadow-lg bg-white py-4 mt-0 border-t-0 z-20 max-h-[300px] overflow-auto scrollbar-hide">
+                      <ul class="flex flex-col gap-4 px-4">
+                        <li class="country-option flex items-center cursor-pointer hover:text-orange duration-300"
+                          data-code="+49">
+                          <div class="mr-2.5 flex items-center">
+                            <img src="img/flag-de.webp" alt="Germany" class="flag w-[28px] h-[20px] rounded-sm">
+                          </div>
+                          <div class="mr-2.5 text-[12px] font-normal">Germany</div>
+                          <div class="text-[12px] font-normal text-grey-2">+49</div>
+                        </li>
+                        <li class="country-option flex items-center cursor-pointer hover:text-orange duration-300"
+                          data-code="+31">
+                          <div class="mr-2.5 flex items-center">
+                            <img class="flag w-[28px] h-[20px] rounded-sm" src="img/flag-nl.webp" alt="">
+                          </div>
+                          <div class="mr-2.5 text-[12px] font-normal">Netherlands</div>
+                          <div class="text-[12px] font-normal text-grey-2">+31</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <a href="./" class="btn-orange !rounded-[16px] !py-4">Call Me</a>
+                <p class="text-[12px] text-grey text-center">
+                  * By clicking "Call Me" you agree to recieve a call and text message at the number
+                  provided..
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Круг 1 -->
+        <div
+          class="absolute left-[-168px] bottom-[-322px] bg-orange rotate-180 opacity-10 rounded-[560px] w-[886px] h-[886px] max-lg:w-[516px] max-lg:h-[516px] max-lg:left-[-162px] max-lg:bottom-[-63px] max-md:w-[318px] max-md:h-[318px] max-md:right-[-89px] max-md:left-auto max-md:bottom-auto max-md:top-1/2 max-md:-translate-y-1/2;">
+        </div>
+
+        <!-- Круг 2 -->
+        <div class="absolute
+    w-[320px] h-[320px]
+    rounded-full
+    bg-orange
+    opacity-10
+    -top-[14px] -right-[10px] z-0
+    md:-top-[46px] md:-right-[95px]
+    sm:w-[206px] sm:h-[206px] sm:-top-[20px] sm:-right-[72px]
+  "></div>
+      </div>
+      <div class="py-[138px] max-sm:py-0 max-sm:pb-[40px] max-md:py-[38px] max-lg:py-[80px]"
+        data-section="section-key-stats">
+        <div class="container">
+          <div class="text-center">
+            <div class="mb-[20px] sm:mb-[40px] md:mb-[60px]">
+              <h2>
+                Key Stats
+              </h2>
+            </div>
+
+            <div class="grid grid-cols-3 gap-5 max-lg:grid-cols-1 max-lg:gap-0">
+              <div
+                class="max-lg:border-b max-lg:border-grey-2 max-lg:last:border-b-0 max-lg:py-5 max-lg:first:pt-0 max-lg:last:pb-0 max-sm:py-3">
+                <div
+                  class="text-[72px] font-medium leading-none mb-4 relative text-left max-lg:text-center max-xl:text-[60px] max-lg:text-[72px] max-md:text-[48px]">
+                  100-150
+                  <span class="w-[calc(100%-60px)] h-[1px] bg-grey-2 block mt-7 max-lg:hidden"></span>
+                </div>
+                <p class="text-base text-left font-normal text-grey max-lg:text-center max-sm:text-[14px]">
+                  Average minutes a small business spends on the phone per day
+                </p>
+              </div>
+
+              <div
+                class="max-lg:border-b max-lg:border-grey-2 max-lg:last:border-b-0 max-lg:py-5 max-lg:first:pt-0 max-lg:last:pb-0 max-sm:py-3">
+                <div
+                  class="text-[72px] font-medium leading-none mb-4 relative text-left max-lg:text-center max-xl:text-[60px] max-lg:text-[72px] max-md:text-[48px]">
+                  40%-60%
+                  <span class="w-[calc(100%-60px)] h-[1px] bg-grey-2 block mt-7 max-lg:hidden"></span>
+                </div>
+                <p class="text-base text-left font-normal text-grey max-lg:text-center max-sm:text-[14px]">
+                  Of business calls go unanswered because staff is busy with other tasks
+                </p>
+              </div>
+
+              <div
+                class="max-lg:border-b max-lg:border-grey-2 max-lg:last:border-b-0 max-lg:py-5 max-lg:first:pt-0 max-lg:last:pb-0 max-sm:py-3">
+                <div
+                  class="text-[72px] font-medium leading-none mb-4 relative text-left max-lg:text-center max-xl:text-[60px] max-lg:text-[72px] max-md:text-[48px]">
+                  60-70%
+                  <span class="w-[calc(100%-60px)] h-[1px] bg-grey-2 block mt-7 max-lg:hidden"></span>
+                </div>
+                <p class="text-base text-left font-normal text-grey max-lg:text-center max-sm:text-[14px]">
+                  Of customers who are put on hold hang up and order elsewhere
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-[140px] max-md:pb-[20px] max-lg:pb-[80px]" data-section="section-benefits">
+        <div class="container">
+          <div class="flex flex-col gap-[12px] ms:gap-[20px] !pb-[40px] max-sm:!pb-[20px]">
+            <h2>
+              Benefits from AI voice helpers<br class="hidden md:inline">
+              for missed calls
+            </h2>
+            <h3 class="text-center">
+              We’re Not Here to Replace Your Staff
+            </h3>
+            <p class="font-normal text-base leading-normal text-grey max-md:text-xs text-center">
+              Your AI Voice Assistant is simply a smart backup for moments when your team can’t pick up the phone.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-[18px] font-semibold mb-[20px] max-sm:mb-[12px]">
+              Use it when:
+            </h3>
+
+            <div class="grid gap-5 xl:grid-cols-[365px_365px_530px] max-xl:grid-cols-2 max-lg:grid-cols-1">
+              <div
+                class="grid-area-1-1-2-2 bg-white border border-grey-2 rounded-[30px] p-5 flex flex-col h-full max-lg:min-h-[auto] max-xl:min-h-[260px]">
+                <div class=" flex flex-col flex-1 mb-[12px] max-lg:flex-row items-center">
+                  <div class=" mb-[24px] max-lg:mb-0 max-lg:mr-[16px] max-lg:flex-[0_0_32px]">
+                    <img src="img/icons/icon1.svg" alt="" class="w-[32px] h-[32px]">
+                  </div>
+                  <div class="w-full font-semibold text-[24px] text-orange max-lg:text-[18px]">
+                    Clients call outside<br> working hours
+                  </div>
+                </div>
+                <p class="text-base leading-normal">
+                  So you never miss a potential booking or question.
+                </p>
+              </div>
+
+              <div
+                class="grid-area-1-2-2-3 bg-white border border-grey-2 rounded-[30px] p-5 flex flex-col h-full max-lg:min-h-[auto] max-xl:min-h-[260px]">
+                <div class=" flex flex-col flex-1 mb-[12px] max-lg:flex-row items-center">
+                  <div class=" mb-[24px] max-lg:mb-0 max-lg:mr-[16px] max-lg:flex-[0_0_32px]">
+                    <img src="img/icons/icon2.svg" alt="" class="w-[32px] h-[32px]">
+                  </div>
+                  <div class=" font-semibold text-[24px] text-orange max-lg:text-[18px]">
+                    Your receptionist doesn't answer after 3–4 rings
+                  </div>
+                </div>
+                <p class="text-base leading-normal">
+                  The AI smoothly takes over, keeping the customer engaged.
+                </p>
+              </div>
+
+              <div class="grid-area-1-3-2-4 border-none overflow-hidden rounded-[30px] p-0 max-lg:min-h-[180px]">
+                <div class=" h-full w-full">
+                  <img loading="lazy" src="img/image1.webp" alt="" class="w-full h-full object-cover">
+                </div>
+              </div>
+
+              <div
+                class="grid-area-2-1-4-2 xl:w-[530px] border-none rounded-[30px] overflow-hidden p-0 order-none max-xl:order-7 max-xl:col-span-full max-lg:order-6 max-xl:min-h-[360px]">
+                <div class=" h-full w-full">
+                  <img loading="lazy" src="img/image2.webp" alt="" class="w-full h-full object-cover">
+                </div>
+              </div>
+
+              <div
+                class=" bg-white border border-grey-2 rounded-[30px] p-5 flex flex-col h-full max-lg:min-h-[auto] max-xl:min-h-[260px] grid-area-2-2-3-3 xl:justify-self-end xl:-mr-[165px] xl:w-[365px]">
+                <div class=" flex flex-col flex-1 mb-[12px] max-lg:flex-row items-center">
+                  <div class=" mb-[24px] max-lg:mb-0 max-lg:mr-[16px] max-lg:flex-[0_0_32px]">
+                    <img src="img/icons/icon3.svg" alt="" class="w-[32px] h-[32px]">
+                  </div>
+                  <div class=" font-semibold text-[24px] text-orange max-lg:text-[18px]">
+                    You receive multiple calls at once
+                  </div>
+                </div>
+                <p class="text-base leading-normal">
+                  While your human host handles one, the AI can handle the rest.
+                </p>
+              </div>
+
+              <div
+                class=" bg-white border border-grey-2 rounded-[30px] p-5 flex flex-col h-full max-lg:min-h-[auto] max-xl:min-h-[260px] grid-area-2-3-3-4 xl:justify-self-end xl:w-[365px]">
+                <div class=" flex flex-col flex-1 mb-[12px] max-lg:flex-row items-center">
+                  <div class=" mb-[24px] max-lg:mb-0 max-lg:mr-[16px] max-lg:flex-[0_0_32px]">
+                    <img src="img/icons/icon4.svg" alt="" class="w-[32px] h-[32px]">
+                  </div>
+                  <div class=" font-semibold text-[24px] text-orange max-lg:text-[18px]">
+                    You decide when the AI should transfer calls
+                  </div>
+                </div>
+                <p class=" text-base leading-normal">
+                  Forward urgent or sensitive calls to your team, based on rules you set.
+                </p>
+              </div>
+
+              <div
+                class="bg-white border border-grey-2 rounded-[30px] p-5 flex flex-col h-full max-lg:order-7 grid-area-3-2-4-4 xl:justify-self-end xl:w-[750px]">
+                <div class=" flex flex-col flex-1 mb-[12px] max-lg:flex-row items-center">
+                  <div class=" mb-[24px] max-lg:mb-0 max-lg:mr-[16px] max-lg:flex-[0_0_32px]">
+                    <img src="img/icons/icon5.svg" alt="" class="w-[32px] h-[32px]">
+                  </div>
+                  <div class="w-full font-semibold text-[24px] text-orange max-lg:text-[18px]">
+                    It can speak your clients’ language
+                  </div>
+                </div>
+                <p class="text-base leading-normal">
+                  Multilingual support makes it easy for non-native English speakers to get help.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-[#003b54] overflow-hidden py-[100px] max-md:py-[20px] max-lg:py-[40px]">
+        <div
+          class="circle3 absolute top-[62px] left-[-198px] w-[598px] h-[598px] rounded-[2000px] bg-[rgba(10,69,94,0.5)] max-lg:hidden max-md:block max-md:w-[354px] max-md:h-[354px] max-md:bottom-[-151px] max-md:top-auto max-md:right-[-93px] max-md:left-auto">
+        </div>
+        <div
+          class="circle4 absolute top-[121px] right-[239px] w-[142px] h-[142px] rounded-[2000px] bg-[rgba(10,69,94,0.5)] max-lg:hidden max-md:block max-md:top-[43px] max-md:left-[-43px]">
+        </div>
+        <div
+          class="circle5 absolute top-[371px] right-[61px] w-[78px] h-[78px] rounded-[2000px] bg-[rgba(10,69,94,0.5)] max-lg:w-[318px] max-lg:h-[318px] max-md:top-[37px] max-md:right-[-96px] max-md:w-[62px] max-md:h-[62px] max-md:top-[12px] max-md:right-[-11px]">
+        </div>
+        <div
+          class="circle6 absolute bottom-[107px] right-[278px] w-[318px] h-[318px] rounded-[2000px] bg-[rgba(10,69,94,0.5)] max-lg:w-[207px] max-lg:h-[207px] max-lg:bottom-[-51px] max-lg:right-auto max-lg:left-[-69px] max-md:w-[318px] max-md:h-[318px] max-md:right-[-132px] max-md:bottom-[-5px] max-md:left-auto">
+        </div>
+        <div class="relative z-10 container">
+          <div class="!pb-[40px] max-lg:!pb-[20px]">
+            <h2 class="text-white !mb-[20px] max-lg:mb-0 max-md:!mb-[8px]">
+              See Our AI Voice Assistant in Action
+            </h2>
+            <p class="text-white font-normal text-base leading-normal max-md:text-xs text-center">
+              Watch how your business can answer every call—fast, friendly,<br class="hidden md:inline"> and error-free,
+              24/7.
+            </p>
+            <p class="text-white font-normal text-base leading-normal max-md:text-xs text-center">
+              Our AI assistant handles incoming calls, answers questions, books<br class="hidden md:inline">
+              appointments, takes orders, and
+              instantly sends you all the details.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-[40px] max-lg:gap-[20px] items-center text-center">
+            <div
+              class="video-body relative mx-auto max-w-[860px] w-full h-[400px] max-md:h-[280px] rounded-[16px] overflow-hidden bg-grey-4 cursor-pointer">
+              <div
+                class="video-play absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[40px] h-[40px]">
+                <img src="img/icons/play.svg" alt="Play" loading="lazy">
+              </div>
+              <video
+                class="video-element absolute top-0 right-0 w-full h-full object-cover cursor-pointer rounded-[8px]"
+                poster="img/video-image.webp" src="./files/videos/video.mp4" playsinline>
+              </video>
+            </div>
+
+            <p class="text-white font-semibold text-[18px] leading-normal max-md:text-[16px]">
+              Check out the live demo and experience it for yourself!
+            </p>
+
+            <div
+              class="grid grid-cols-2 gap-5 max-w-[420px] max-lg:max-w-[100%] max-lg:w-full mx-auto max-md:mt-[20px] max-sm:grid-cols-1 max-sm:mt-0">
+              <a href="./" class="w-full btn-orange">Get
+                a demo</a>
+              <a href="tel:70000000000"
+                class="inline-block w-full text-center font-semibold text-[16px] leading-normal !text-white border border-white rounded-[30px] py-[12px] px-[32px] transition-opacity duration-300 hover:opacity-80 max-md:py-[10px]">
+                +7 000 000 0000
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-[140px] max-md:py-[40px] max-lg:py-[80px]" data-section="section-functions">
+        <div class="container">
+          <div
+            class="flex flex-col items-center gap-[12px] sm:gap-[20px] !pb-[20px] max-lg:!pb-[40px] max-md:!pb-[20px]">
+            <h2 class="max-lg:mb-[8px]">
+              Here's what you get:
+            </h2>
+            <h3>
+              This isn't just a bot — it's your virtual team member
+            </h3>
+            <p class="font-normal text-base leading-normal text-grey max-md:text-xs text-center max-w-[860px]">
+              NeverMissedCall is a fully trained AI Assistant that knows your restaurant inside and out.
+              It handles incoming calls, answers questions, and books tables — all on autopilot.
+            </p>
+          </div>
+
+          <div class="grid gap-5 grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:gap-[12px]">
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class="flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon6.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class="hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  24/7 Availability
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  24/7 Availability
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  Never miss a guest. Your assistant is always on, ready to answer, assist, and reserve.
+                </div>
+              </div>
+            </div>
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class=" flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon7.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class=" hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  Tailored Training for Your Business
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  Tailored Training for Your Business
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  We train your AI on your menu, FAQs, hours, locations, and real-world customer
+                  scripts — so it speaks your language.
+                </div>
+              </div>
+            </div>
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class=" flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon8.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class=" hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  Custom Tone & Voice
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  Custom Tone & Voice
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  Whether you want warm and friendly or polished and professional, we fine-tune your
+                  assistant’s tone to match your brand.
+                </div>
+              </div>
+            </div>
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class=" flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon9.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class=" hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  Call Recordings & Transcriptions
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  Call Recordings & Transcriptions
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  All calls are recorded and transcribed — so you can review, improve, and stay
+                  informed.
+                </div>
+              </div>
+            </div>
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class=" flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon10.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class=" hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  Real-Time Notifications
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  Real-Time Notifications
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  Instant alerts via email or SMS for new bookings and important updates.
+                </div>
+              </div>
+            </div>
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class=" flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon11.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class=" hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  Smart Routing & Booking
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  Smart Routing & Booking
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  Advanced call routing, direct booking links, automated reminders, and customized
+                  post-call actions — built-in.
+                </div>
+              </div>
+            </div>
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class=" flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon12.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class=" hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  Fully Done-For-You Setup
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  Fully Done-For-You Setup
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  We handle everything — from onboarding to launch — with step-by-step support from
+                  our success team.
+                </div>
+              </div>
+            </div>
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class=" flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon13.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class=" hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  Ongoing Assistant Optimization
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  Ongoing Assistant Optimization
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  We work with your AI over the first 60 days to review conversations, refine
+                  responses, and ensure smooth interactions.
+                </div>
+              </div>
+            </div>
+            <div
+              class="span-full-on-last border border-grey-2 rounded-[30px] p-5 bg-white flex flex-col h-full min-h-[240px] max-md:min-h-[100%]">
+              <div
+                class=" flex flex-col flex-1 mb-[35px] max-lg:mb-[16px] max-md:flex-[0_1_auto] max-md:flex-row max-md:items-center max-md:mb-[12px]">
+                <img src="img/icons/icon14.svg" alt="" class="w-[40px] h-[40px] max-md:flex-[0_0_40px]">
+                <div
+                  class=" hidden font-semibold text-orange text-[24px] max-md:block max-md:ml-[12px] max-md:text-[18px]">
+                  Dedicated Customer Support
+                </div>
+              </div>
+              <div>
+                <div class=" mb-[10px] font-semibold text-orange text-[24px] max-md:hidden">
+                  Dedicated Customer Support
+                </div>
+                <div class="text-[16px] max-md:text-[14px]">
+                  Questions? Our support team is here via email to help you at every step.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-[140px] max-md:pb-[40px] max-lg:pb-[80px]" data-section="section-pricing">
+        <div class="container">
+          <div class="!pb-[40px] max-lg:!pb-[20px]">
+            <h2>
+              Our pricing
+            </h2>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="options flex items-center border border-grey-2 rounded-full p-5 gap-10 mb-[60px] max-md:flex-col  max-lg:mb-[40px] max-md:items-start max-md:w-full max-md:border-0 max-md:p-0 max-md:gap-[12px]">
+              <div class="relative cursor-pointer option-item group" data-state="checked">
+                <input data-filter="pricing1" type="radio" name="option" class="options-input" id="o_1" value="1" hidden
+                  checked>
+                <label for="o_1" class="options-label inline-flex items-center cursor-pointer gap-2.5">
+                  <span
+                    class="options-radio w-6 h-6 flex-none rounded-full border border-grey-2 relative group-[.option-item[data-state=checked]]:border-orange">
+                    <span
+                      class="options-dot absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-orange rounded-full 
+        group-[.option-item[data-state=checked]]:opacity-100 opacity-0 transition-opacity duration-300 ease-in-out"></span>
+                  </span>
+                  <span class="font-semibold text-[16px] max-md:text-[14px]">Billed monthly</span>
+                </label>
+              </div>
+              <div class="relative cursor-pointer option-item group" data-state="unchecked">
+                <input data-filter="pricing2" type="radio" name="option" class="options-input" id="o_2" value="2"
+                  hidden>
+                <label for="o_2" class="options-label inline-flex items-center cursor-pointer gap-2.5">
+                  <span
+                    class="options-radio w-6 h-6 flex-none rounded-full border border-grey-2 relative group-[.option-item[data-state=checked]]:border-orange">
+                    <span
+                      class="options-dot absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-orange rounded-full 
+        group-[.option-item[data-state=checked]]:opacity-100 opacity-0 transition-opacity duration-300 ease-in-out"></span>
+                  </span>
+                  <span class="font-semibold text-[16px] max-md:text-[14px]">Billed annually</span>
+                  <span class="font-semibold text-[16px] max-md:text-[14px] text-orange">20% off</span>
+                </label>
+              </div>
+            </div>
+            <div class="w-full grid grid-cols-3 max-xl:grid-cols-1 max-xl:gap-10 max-md:gap-40px">
+              <div data-state="inactive" data-category="pricing1"
+                class="pricing-column group flex flex-col items-center relative rounded-[28px] xl:p-2.5">
+                <div
+                  class="pricing-item group-data-[state=active]:shadow-[0_0_47px_0_rgba(255,107,43,0.2)] 
+                      group-data-[state=active]:border-none w-full relative border border-grey-2 rounded-[28px] p-8 flex flex-col items-center z-10 bg-white h-full max-xl:flex-row max-xl:justify-between max-xl:items-start max-lg:p-[20px] max-md:flex-col max-md:justify-start">
+                  <span class="pricing-item-before group-data-[state=active]:opacity-100"></span>
+                  <div
+                    class="absolute top-[-17px] left-1/2 -translate-x-1/2 bg-[#003b54] text-white text-xs font-normal px-5 py-2.5 rounded-full z-10 max-xl:left-auto max-xl:-translate-x-0 max-xl:right-0 max-md:text-[10px] max-md:top-[-16px] max-md:right-auto max-md:left-1/2 max-md:-translate-x-1/2">
+                    14 days free trial
+                  </div>
+                  <div class="w-full mb-5 max-xl:flex-[0_0_360px] max-xl:mr-[40px] max-md:flex-[0_1_auto]">
+                    <div class=" text-orange text-[24px] font-semibold mb-4 max-sm:text-[18px]">
+                      Essentials
+                    </div>
+                    <div class="text-[40px] font-bold mb-4 max-sm:text-[32px]">
+                      $44.95/month
+                    </div>
+                    <div class=" text-grey text-[16px] mb-5 max-md:text-[14px]">
+                      Key features and integrations
+                    </div>
+                    <a href="./" class="pricing-button  btn-orange-bg w-full  max-xl:!mb-[0px] group-data-[state=active]:bg-orange 
+                    group-data-[state=active]:text-white 
+                    group-data-[state=active]:hover:bg-[#f56121]">
+                      Start for Free
+                    </a>
+                  </div>
+                  <div class="w-full max-xl:flex-[0_0_288px]  max-md:flex-[0_1_auto]">
+                    <div class="font-semibold text-[16px] mb-4">What’s included:</div>
+                    <ul class="flex flex-col gap-2 max-md:gap-2">
+                      <li>Core AI Call Handling</li>
+                      <li>Basic FAQs</li>
+                      <li>Message / Email transcript</li>
+                      <li>Single User / Line</li>
+                      <li>100 calls included</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div data-state="active" data-category="pricing2"
+                class="pricing-column group flex flex-col items-center relative rounded-[28px] xl:p-2.5">
+                <div
+                  class="pricing-item group-data-[state=active]:shadow-[0_0_47px_0_rgba(255,107,43,0.2)] 
+                    group-data-[state=active]:border-none w-full relative border border-grey-2 rounded-[28px] p-8 flex flex-col items-center z-10 bg-white h-full max-xl:flex-row max-xl:justify-between max-xl:items-start max-lg:p-[20px] max-md:flex-col max-md:justify-start">
+                  <span class="pricing-item-before group-data-[state=active]:opacity-100"></span>
+                  <div
+                    class="absolute top-[-17px] left-1/2 -translate-x-1/2 bg-[#003b54] text-white text-xs font-normal px-5 py-2.5 rounded-full z-10 max-xl:left-auto max-xl:-translate-x-0 max-xl:right-0 max-md:text-[10px] max-md:top-[-16px] max-md:right-auto max-md:left-1/2 max-md:-translate-x-1/2">
+                    Most popular
+                  </div>
+                  <div class="w-full mb-5 max-xl:flex-[0_0_360px] max-xl:mr-[40px] max-md:flex-[0_1_auto]">
+                    <div class=" text-orange text-[24px] font-semibold mb-4 max-sm:text-[18px]">
+                      Pro
+                    </div>
+                    <div class="text-[40px] font-bold mb-4 max-sm:text-[32px]">
+                      $149.95/month
+                    </div>
+                    <div class=" text-grey text-[16px] mb-5 max-md:text-[14px]">
+                      Advanced tools to do more
+                    </div>
+                    <a href="./" class="pricing-button btn-orange-bg w-full  max-xl:!mb-[0px] group-data-[state=active]:bg-orange 
+                    group-data-[state=active]:text-white 
+                    group-data-[state=active]:hover:bg-[#f56121]">
+                      Continue with Pro
+                    </a>
+                  </div>
+                  <div class="w-full max-xl:flex-[0_0_288px]  max-md:flex-[0_1_auto]">
+                    <div class="font-semibold text-[16px] mb-4">What’s included:</div>
+                    <ul class="flex flex-col gap-2 max-md:gap-2">
+                      <li>Everything in Essentials, plus:</li>
+                      <li>Accept Reservations + Orders</li>
+                      <li>3 simulational calls</li>
+                      <li>Upsales + Reminders</li>
+                      <li>Customer feedback survey</li>
+                      <li>Dedicated manager to train your AI agent</li>
+                      <li>500 calls included</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div data-state="inactive" data-category="pricing3"
+                class="pricing-column group flex flex-col items-center relative rounded-[28px] xl:p-2.5">
+                <div
+                  class="pricing-item group-data-[state=active]:shadow-[0_0_47px_0_rgba(255,107,43,0.2)] 
+                      group-data-[state=active]:border-none w-full relative border border-grey-2 rounded-[28px] p-8 flex flex-col items-center z-10 bg-white h-full max-xl:flex-row max-xl:justify-between max-xl:items-start max-lg:p-[20px] max-md:flex-col max-md:justify-start">
+                  <span class="pricing-item-before group-data-[state=active]:opacity-100"></span>
+                  <div class="w-full mb-5 max-xl:flex-[0_0_360px] max-xl:mr-[40px] max-md:flex-[0_1_auto]">
+                    <div class=" text-orange text-[24px] font-semibold mb-4 max-sm:text-[18px]">
+                      Premium
+                    </div>
+                    <div class="text-[40px] font-bold mb-4 max-sm:text-[32px]">
+                      $249.95/month
+                    </div>
+                    <div class=" text-grey text-[16px] mb-5 max-md:text-[14px]">
+                      Powerful AI and analytics
+                    </div>
+                    <a href="./" class="pricing-button btn-orange-bg w-full  max-xl:!mb-[0px] group-data-[state=active]:bg-orange 
+                    group-data-[state=active]:text-white 
+                    group-data-[state=active]:hover:bg-[#f56121]">
+                      Continue with Premium
+                    </a>
+                  </div>
+                  <div class="w-full max-xl:flex-[0_0_288px]  max-md:flex-[0_1_auto]">
+                    <div class="font-semibold text-[16px] mb-4">What’s included:</div>
+                    <ul class="flex flex-col gap-2 max-md:gap-2">
+                      <li>Everything in Pro, plus:</li>
+                      <li>Integration with your POS</li>
+                      <li>Advanced triggers and calls forwarding</li>
+                      <li>Calls results analysis</li>
+                      <li>10 simulational calls</li>
+                      <li>Monthly training + upgrades</li>
+                      <li>32 Languages</li>
+                      <li>Priority support</li>
+                      <li>1000 calls included</li>
+                      <li>Voice cloning</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" bg-[#f7f5f4] py-[100px] max-md:py-[20px] max-lg:py-[40px]" data-section="section-faq">
+        <div class="max-w-[900px] mx-auto px-4">
+          <div class="pb-[40px] max-md:!pb-[20px]">
+            <h2>
+              Frequently asked questions
+            </h2>
+          </div>
+          <div data-spollers class=" flex flex-col gap-5">
+            <div class=" border border-grey-2 rounded-[30px] p-5 bg-white">
+              <button type="button" data-spoller
+                class="group flex justify-between items-center w-full font-semibold text-base text-left">
+                Can you serve my business?
+                <img src="img/icons/plus.svg" alt=""
+                  class="group-data-[state=open]:-rotate-45 w-4 h-4 transition-transform duration-300 ml-5">
+              </button>
+              <div class="mt-4">
+                <p class="text-grey text-[16px] max-md:text-[14px]">
+                  Yes! Our AI Voice Agents work well across a wide range of industries. They handle repetitive calls,
+                  answer customer questions, and pass important info to your team at every stage of the customer
+                  interaction.
+                  <br>
+                  Industries we support include: restaurants, home services, law firms, medical practices, spas, fitness
+                  studios, and many more.
+                </p>
+              </div>
+            </div>
+            <div class=" border border-grey-2 rounded-[30px] p-5 bg-white">
+              <button type="button" data-state="closed" data-spoller
+                class="group flex justify-between items-center w-full font-semibold text-base text-left">
+                What plan should I choose?
+                <img src="img/icons/plus.svg" alt=""
+                  class="group-data-[state=open]:-rotate-45 w-4 h-4 transition-transform duration-300 ml-5">
+              </button>
+              <div class="mt-4">
+                <p class="text-grey text-[16px] max-md:text-[14px]">
+                  We recommend starting with a 14-day free trial to see how well the AI Voice Agent matches your
+                  communication style.
+                  <br>
+                  Then begin with the Essential Plan. Once you see value from capturing missed calls, you can upgrade to
+                  Pro or Premium — and we’ll gladly help with that transition.
+                </p>
+              </div>
+            </div>
+            <div class=" border border-grey-2 rounded-[30px] p-5 bg-white">
+              <button type="button" data-spoller
+                class="group flex justify-between items-center w-full font-semibold text-base text-left">
+                What makes us different?
+                <img src="img/icons/plus.svg" alt=""
+                  class="group-data-[state=open]:-rotate-45 w-4 h-4 transition-transform duration-300 ml-5">
+              </button>
+              <div class="mt-4">
+                <p class="text-grey text-[16px] max-md:text-[14px]">
+                  Unlike other companies, we offer top-tier AI language models at a more affordable price.
+                  <br>
+                  You don’t need to train or configure anything yourself — we handle all the setup and training, so you
+                  can focus on running your business without hiring extra staff or watching long tutorial videos.
+                </p>
+              </div>
+            </div>
+            <div class=" border border-grey-2 rounded-[30px] p-5 bg-white">
+              <button type="button" data-spoller
+                class="group flex justify-between items-center w-full font-semibold text-base text-left">
+                What if the AI Agent makes mistakes?
+                <img src="img/icons/plus.svg" alt=""
+                  class="group-data-[state=open]:-rotate-45 w-4 h-4 transition-transform duration-300 ml-5">
+              </button>
+              <div class="mt-4">
+                <p class="text-grey text-[16px] max-md:text-[14px]">
+                  Our AI answers based strictly on the information you provide: your website, menu, price list, FAQs,
+                  etc.
+                  <br>
+                  The more detailed the materials we receive, the smarter and more accurate the assistant becomes.
+                  <br>
+                  Plus, we conduct monthly reviews of real conversations to retrain and improve the assistant
+                  continuously.
+                </p>
+              </div>
+            </div>
+            <div class=" border border-grey-2 rounded-[30px] p-5 bg-white">
+              <button type="button" data-spoller
+                class="group flex justify-between items-center w-full font-semibold text-base text-left">
+                What if my CMS isn’t on your integrations list?
+                <img src="img/icons/plus.svg" alt=""
+                  class="group-data-[state=open]:-rotate-45 w-4 h-4 transition-transform duration-300 ml-5">
+              </button>
+              <div class="mt-4">
+                <p class="text-grey text-[16px] max-md:text-[14px]">
+                  No problem. We’re a growing company committed to offering the best service at an affordable price. If
+                  your customer management system isn’t on our current integration list, we’ll work closely with you to
+                  create a solution that fits your workflow and order-taking process — no extra effort on your side.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-[140px] max-sm:py-[40px] max-md:py-[80px]" data-section="section-try-it">
+        <div class="container">
+          <div
+            class="flex flex-col gap-[20px] items-center text-center !pb-[100px]  max-lg:!pb-[80px] max-md:!pb-[40px]">
+            <h2>
+              Not sure if we are right for you?
+            </h2>
+            <h3>
+              Just call our AI Agent to pass quick onboarding and we will create + train + provide you a phone number to
+              call and test how it speaks with your business
+            </h3>
+          </div>
+          <div
+            class="relative bg-[#003b54] rounded-[30px] p-[110px] flex items-center justify-between gap-[40px] overflow-hidden max-lg:gap-[20px] max-xl:p-[40px] max-lg:flex-col max-lg:justify-start max-lg:p-[40px] max-md:p-[20px]">
+            <div class="relative z-10 flex-shrink-0 w-[460px] max-lg:w-full max-lg:flex-[1_1_auto]">
+              <h2 class=" !text-white mb-5 !text-left max-lg:!text-center">
+                <s>Seeing</s> Speaking is Believing
+              </h2>
+              <p class="!text-white max-lg:text-center">
+                Let our AI agent call you now so you can evaluate how good they are in June 2025
+              </p>
+            </div>
+
+            <div class="relative z-10 flex-shrink-0 w-[419px] max-md:w-full">
+              <form action="#"
+                class="relative w-[419px] rounded-[16px] p-[21px] border border-white/50 max-w-full max-md:w-[100%]">
+                <div class="relative z-10 flex flex-col gap-[20px]">
+                  <div>
+                    <div class="form-input flex items-center border border-grey-2 rounded-xl px-4 py-3 bg-white w-full">
+                      <input autocomplete="off" type="text" name="form[]" placeholder="Your email"
+                        class="font-semibold text-base leading-[1.2] w-full bg-transparent block max-md:text-[14px]">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="form-select group relative w-full cursor-pointer" data-state="closed">
+                      <div
+                        class="form-input flex items-center border border-grey-2 rounded-xl px-4 py-3 bg-white w-full">
+                        <div class="country-select-trigger flex items-center mr-2.5">
+                          <img src="img/flag-bl.webp" alt="Germany" class="flag w-[28px] h-[20px] rounded-sm">
+                          <img src="img/icons/arrow2.svg" alt=""
+                            class="arrow ml-1 w-2 h-2 transition-transform group-[.form-select[data-state='open']]:rotate-180">
+                        </div>
+                        <input type="tel" name="phone" placeholder="Your phone"
+                          class="phone-input font-semibold text-base leading-[1.2] w-full bg-transparent block max-md:text-[14px]"
+                          id="phoneInput">
+                      </div>
+
+                      <div
+                        class="form-body hidden group-[.form-select[data-state='open']]:block country-dropdown absolute top-full left-0 w-full rounded-b-[16px] rounded-t-none shadow-lg bg-white py-4 mt-0 border-t-0 z-20 max-h-[300px] overflow-auto scrollbar-hide">
+                        <ul class="flex flex-col gap-4 px-4">
+                          <li class="country-option flex items-center cursor-pointer hover:text-orange duration-300"
+                            data-code="+49">
+                            <div class="mr-2.5 flex items-center">
+                              <img src="img/flag-de.webp" alt="Germany" class="flag w-[28px] h-[20px] rounded-sm">
+                            </div>
+                            <div class="mr-2.5 text-[12px] font-normal">Germany</div>
+                            <div class="text-[12px] font-normal text-grey-2">+49</div>
+                          </li>
+                          <li class="country-option flex items-center cursor-pointer hover:text-orange duration-300"
+                            data-code="+31">
+                            <div class="mr-2.5 flex items-center">
+                              <img class="flag w-[28px] h-[20px] rounded-sm" src="img/flag-nl.webp" alt="">
+                            </div>
+                            <div class="mr-2.5 text-[12px] font-normal">Netherlands</div>
+                            <div class="text-[12px] font-normal text-grey-2">+31</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./" class="btn-orange !rounded-[16px] !py-4">Call Me</a>
+                  <p class="text-[12px] text-white/50 text-center">
+                    * By clicking "Call Me" you agree to recieve a call and text message at the number
+                    provided..
+                  </p>
+                </div>
+              </form>
+            </div>
+
+            <div
+              class="circle7 absolute left-[-119px] top-[-147px] w-[451px] h-[451px] rounded-[2000px] bg-[rgba(10,69,94,0.5)] max-lg:left-[-112px] max-lg:top-[145px] max-lg:w-[301px] max-lg:h-[301px] max-md:hidden">
+            </div>
+
+            <div
+              class="circle8 absolute top-[55px] right-[-71px] w-[162px] h-[162px] rounded-[2000px] bg-[rgba(10,69,94,0.5)] max-lg:top-[-26px] max-lg:right-[-77px] max-md:top-[36px] max-md:right-[-62px] max-md:w-[180px] max-md:h-[180px]">
+            </div>
+
+            <div
+              class="circle9 absolute left-1/2 -translate-x-1/2 bottom-[-108px] w-[301px] h-[301px] rounded-[2000px] bg-[rgba(10,69,94,0.5)] max-lg:left-auto max-lg:translate-x-0 max-lg:bottom-[77px] max-lg:right-[-90px] max-lg:w-[211px] max-lg:h-[211px] max-md:w-[120px] max-md:h-[120px] max-md:bottom-[-27px] max-md:right-[-40px]">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class=" bg-black text-white">
+      <div class="container max-md:!px-0">
+        <!-- Top -->
+        <div
+          class="flex items-center justify-between gap-30 pb-[80px] pt-[80px] border-b border-[#5e5e5e] max-md:flex-col max-lg:items-start max-lg:gap-y-10 max-lg:py-10 max-md:py-10 max-md:px-5">
+
+          <!-- Logo -->
+          <div class="flex flex-col gap-y-5 max-md:gap-y-3">
+            <a href="./">
+              <img loading="lazy" src="img/icons/logo2.svg" alt="Logo" class="h-[35px] w-auto">
+            </a>
+            <p class="text-lightGray font-normal text-base leading-[1.2]">
+              Meet your restaurant's new AI employee
+            </p>
+          </div>
+
+          <!-- Menu -->
+          <div
+            class="flex items-center flex-1 justify-end max-md:justify-between max-lg:items-start max-lg:gap-x-[164px] max-md:w-full max-md:justify-between max-md:gap-x-7">
+            <ul class="flex flex-wrap justify-end gap-x-7 gap-y-2.5 max-lg:flex-col max-lg:gap-y-7 max-md:gap-y-2.5">
+              <li><a href="./" class="text-white hover:text-orange transition-colors duration-300">Key Stats</a></li>
+              <li><a href="./" class="text-white hover:text-orange transition-colors duration-300">Benefits</a></li>
+              <li><a href="./" class="text-white hover:text-orange transition-colors duration-300">Pricing</a></li>
+              <li><a href="./" class="text-white hover:text-orange transition-colors duration-300">Main Functions</a>
+              </li>
+              <li><a href="./" class="text-white hover:text-orange transition-colors duration-300">FAQ</a></li>
+              <li><a href="./" class="text-white hover:text-orange transition-colors duration-300">Try it</a></li>
+            </ul>
+
+            <a href="./" class="footer-arrow flex justify-center items-center w-6 h-6 ml-10 max-pc:ml-10 max-lg:ml-0">
+              <img loading="lazy" src="img/icons/arrow.svg" alt="" class="w-full h-full">
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="flex flex-col items-center gap-y-5 py-15 max-lg:py-10 max-md:py-10 max-md:px-5">
+          <a href="./policy.html"
+            class="font-semibold leading-[1.2] underline underline-offset-2 text-orange hover:opacity-80 transition-opacity  duration-300 text-center max-md:text-sm">
+            Privacy policy
+          </a>
+          <div class="font-normal text-base leading-[1.2] text-lightGray text-center max-md:text-xs">
+            Copyright © 2025 Ai Voice Assistant | All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
